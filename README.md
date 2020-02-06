@@ -29,3 +29,5 @@ These files specify which products were purchased in each order. order_products_
 # orders.csv
 This file tells to which set (prior, train, test) an order belongs. You are predicting reordered items only for the test set orders. 'order_dow' is the day of week.
 
+# Dataset
+ Please download the dataset from [https://www.kaggle.com/c/instacart-market-basket-analysis/data]
