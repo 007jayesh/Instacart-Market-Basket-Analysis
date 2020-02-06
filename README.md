@@ -7,7 +7,7 @@ The goal is to predict which products will be in a user's next order. The datase
 # File descriptions
 Each entity (customer, product, order, aisle, etc.) has an associated unique id. Most of the files and variable names should be self-explanatory.
 
-### aisles.csv
+## aisles.csv
  `aisle_id,aisle
  
  1,prepared soups salads  
@@ -15,7 +15,7 @@ Each entity (customer, product, order, aisle, etc.) has an associated unique id.
  3,energy granola bars 
  ...`
 
-# departments.csv
+## departments.csv
 `department_id,department\
 
  1,frozen  
@@ -23,11 +23,26 @@ Each entity (customer, product, order, aisle, etc.) has an associated unique id.
  3,bakery 
  ...`
 
-# order_products__*.csv
+## order_products__*.csv
 These files specify which products were purchased in each order. order_products__prior.csv contains previous order contents for all customers. 'reordered' indicates that the customer has a previous order that contains the product. Note that some orders will have no reordered items. You may predict an explicit 'None' value for orders with no reordered items
 
-# orders.csv
+## orders.csv
 This file tells to which set (prior, train, test) an order belongs. You are predicting reordered items only for the test set orders. 'order_dow' is the day of week.
 
 # Dataset
  Please download the dataset from [https://www.kaggle.com/c/instacart-market-basket-analysis/data]
+ 
+ # classifier
+ Constructed using Tenserflow GBM
+ 
+ # Requirements
+ Python 3.8.1
+  
+ Python Packages :
+    
+    Tenserflow GBM 2.0
+    Numpy 1.8
+    Pandas 0.25.0
+    Matplotlib 3.1.2
+    Scikit-learn 0.22.1
+ 
