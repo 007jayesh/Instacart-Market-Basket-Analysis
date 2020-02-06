@@ -11,20 +11,21 @@ Each entity (customer, product, order, aisle, etc.) has an associated unique id.
  `aisle_id,aisle
  
  1,prepared soups salads  
- 
  2,specialty cheeses  
- 
  3,energy granola bars 
- 
  ...`
 
 # departments.csv
 `department_id,department\
 
  1,frozen  
- 
  2,other  
- 
  3,bakery 
- 
  ...`
+
+# order_products__*.csv
+These files specify which products were purchased in each order. order_products__prior.csv contains previous order contents for all customers. 'reordered' indicates that the customer has a previous order that contains the product. Note that some orders will have no reordered items. You may predict an explicit 'None' value for orders with no reordered items
+
+# orders.csv
+This file tells to which set (prior, train, test) an order belongs. You are predicting reordered items only for the test set orders. 'order_dow' is the day of week.
+
