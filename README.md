@@ -17,3 +17,14 @@ Each entity (customer, product, order, aisle, etc.) has an associated unique id.
  3,energy granola bars 
  
  ...`
+
+# departments.csv
+`department_id,department\
+
+ 1,frozen  
+ 
+ 2,other  
+ 
+ 3,bakery 
+ 
+ ...`
